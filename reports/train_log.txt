@@ -1,0 +1,18 @@
+train_core 363271 rows + 235710 augmented benign prefixes; val 123238 rows (937 removed: same URL as an augmented training row)
+baseline_dummy           AUC 0.5000  recall@1%FPR 0.000  FPR real roots 0.000  
+baseline_rules           AUC 0.6034  recall@1%FPR 0.000  FPR real roots 0.000  
+search subsample: 191385 rows (115649 original), 3 grouped folds
+  search logistic_regression: CV AUC 0.9797 {'logisticregression__C': np.float64(0.0745934328572655)} (7s)
+logistic_regression      AUC 0.8493  recall@1%FPR 0.455  FPR real roots 0.023  size 0.0 MB  latency 0.5 ms
+  search decision_tree: CV AUC 0.9775 {'max_depth': 29, 'min_samples_leaf': 75} (19s)
+decision_tree            AUC 0.8670  recall@1%FPR 0.568  FPR real roots 0.038  size 0.1 MB  latency 0.3 ms
+  search random_forest: CV AUC 0.9846 {'min_samples_leaf': 3, 'max_features': 'sqrt', 'max_depth': 16} (114s)
+random_forest            AUC 0.9073  recall@1%FPR 0.591  FPR real roots 0.051  size 8.6 MB  latency 25.0 ms
+  search hist_gradient_boosting: CV AUC 0.9900 {'l2_regularization': np.float64(9.307782732027235), 'learning_rate': np.float64(0.12433768134039067), 'max_iter': 300, 'max_leaf_nodes': 31, 'min_samples_leaf': 20} (561s)
+hist_gradient_boosting   AUC 0.8885  recall@1%FPR 0.617  FPR real roots 0.047  size 0.5 MB  latency 2.7 ms
+chosen model: hist_gradient_boosting
+{
+  "high": 0.55,
+  "low": 0.13
+}
+exit 0

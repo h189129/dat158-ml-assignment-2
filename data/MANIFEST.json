@@ -1,0 +1,22 @@
+{
+  "dataset": "phreshphish/phreshphish",
+  "revision": "eca603e0ecd4f698f8d4d226c088659e72681239",
+  "license": "CC BY 4.0",
+  "columns": [
+    "sha256",
+    "url",
+    "label",
+    "date",
+    "target"
+  ],
+  "rows": 666315,
+  "rows_by_split_label": {
+    "test/benign": 91260,
+    "test/phish": 76800,
+    "train/benign": 276729,
+    "train/phish": 221526
+  },
+  "content_sha256": "66dd3b2a4c5f0156f7c4400c906b5104d154b0c9f3dcce2d22351bdc34dcb773",
+  "benchmark_files": 36,
+  "download_seconds": 68.0
+}

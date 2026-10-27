@@ -1,0 +1,354 @@
+{
+  "model": "hist_gradient_boosting",
+  "val_summary": {
+    "n": 124183,
+    "phish_share": 0.2358293808331253,
+    "roc_auc": 0.876653755066261,
+    "average_precision": 0.8396490437334313,
+    "recall_at_fpr_0.01": 0.6265792528853377,
+    "threshold_at_fpr_0.01": 0.5328438719517893
+  },
+  "val_at_t_high": {
+    "threshold": 0.5328438719517893,
+    "tp": 18350,
+    "fp": 948,
+    "tn": 93949,
+    "fn": 10936,
+    "precision": 0.9508757384184889,
+    "recall": 0.6265792528853377,
+    "f1": 0.7553927218837477,
+    "fpr": 0.009989778391308471
+  },
+  "val_at_t_low": {
+    "threshold": 0.11890754289047968,
+    "tp": 21285,
+    "fp": 4739,
+    "tn": 90158,
+    "fn": 8001,
+    "precision": 0.81789886258838,
+    "recall": 0.7267977873386601,
+    "f1": 0.7696619056228531,
+    "fpr": 0.04993835421562325
+  },
+  "expected_precision_at_base_rate": {
+    "50%": 0.9843068419912389,
+    "5%": 0.767504572480376,
+    "1%": 0.3878385305279982
+  },
+  "band_share_by_class": {
+    "benign": {
+      "high": 0.01,
+      "low": 0.9501,
+      "suspicious": 0.0399
+    },
+    "phish": {
+      "high": 0.6266,
+      "low": 0.2732,
+      "suspicious": 0.1002
+    }
+  },
+  "by_shared_platform": {
+    "false": {
+      "n_benign": 93973.0,
+      "fpr": 0.008,
+      "n_phish": 23827.0,
+      "recall": 0.5441
+    },
+    "true": {
+      "n_benign": 924.0,
+      "fpr": 0.21,
+      "n_phish": 5459.0,
+      "recall": 0.9864
+    }
+  },
+  "by_is_root": {
+    "false": {
+      "n_benign": 88642.0,
+      "fpr": 0.0074,
+      "n_phish": 17088.0,
+      "recall": 0.5432
+    },
+    "true": {
+      "n_benign": 6255.0,
+      "fpr": 0.0467,
+      "n_phish": 12198.0,
+      "recall": 0.7434
+    }
+  },
+  "by_tld": {
+    "app": {
+      "n_benign": 83.0,
+      "fpr": 0.1325,
+      "n_phish": 2719.0,
+      "recall": 0.9886
+    },
+    "ca": {
+      "n_benign": 535.0,
+      "fpr": 0.0037,
+      "n_phish": 39.0,
+      "recall": 0.6154
+    },
+    "co.jp": {
+      "n_benign": 1377.0,
+      "fpr": 0.0,
+      "n_phish": 7.0,
+      "recall": 0.0
+    },
+    "co.uk": {
+      "n_benign": 1758.0,
+      "fpr": 0.004,
+      "n_phish": 132.0,
+      "recall": 0.7273
+    },
+    "com": {
+      "n_benign": 62928.0,
+      "fpr": 0.0077,
+      "n_phish": 15256.0,
+      "recall": 0.5016
+    },
+    "com.au": {
+      "n_benign": 1104.0,
+      "fpr": 0.0,
+      "n_phish": 28.0,
+      "recall": 0.3929
+    },
+    "edu": {
+      "n_benign": 1462.0,
+      "fpr": 0.0,
+      "n_phish": 12.0,
+      "recall": 0.0
+    },
+    "gov": {
+      "n_benign": 3083.0,
+      "fpr": 0.0,
+      "n_phish": 270.0,
+      "recall": 0.0
+    },
+    "io": {
+      "n_benign": 366.0,
+      "fpr": 0.082,
+      "n_phish": 508.0,
+      "recall": 0.9291
+    },
+    "it": {
+      "n_benign": 1021.0,
+      "fpr": 0.002,
+      "n_phish": 43.0,
+      "recall": 0.5814
+    },
+    "jp": {
+      "n_benign": 1035.0,
+      "fpr": 0.0029,
+      "n_phish": 25.0,
+      "recall": 0.2
+    },
+    "net": {
+      "n_benign": 2911.0,
+      "fpr": 0.0165,
+      "n_phish": 573.0,
+      "recall": 0.4869
+    },
+    "org": {
+      "n_benign": 9713.0,
+      "fpr": 0.0012,
+      "n_phish": 747.0,
+      "recall": 0.1379
+    },
+    "shop": {
+      "n_benign": 14.0,
+      "fpr": 0.6429,
+      "n_phish": 697.0,
+      "recall": 0.9555
+    },
+    "top": {
+      "n_benign": 5.0,
+      "fpr": 1.0,
+      "n_phish": 933.0,
+      "recall": 1.0
+    }
+  },
+  "recall_by_target": {
+    "booking": {
+      "n": 3262,
+      "recall": 0.8921
+    },
+    "facebook": {
+      "n": 2633,
+      "recall": 0.8538
+    },
+    "meta": {
+      "n": 2142,
+      "recall": 0.9627
+    },
+    "microsoft": {
+      "n": 618,
+      "recall": 0.8932
+    },
+    "naver": {
+      "n": 3198,
+      "recall": 0.5419
+    },
+    "other": {
+      "n": 2357,
+      "recall": 0.9563
+    },
+    "outlook": {
+      "n": 489,
+      "recall": 0.9673
+    },
+    "qmp": {
+      "n": 437,
+      "recall": 0.0
+    },
+    "rakuten": {
+      "n": 535,
+      "recall": 0.4636
+    },
+    "robinhood": {
+      "n": 4604,
+      "recall": 0.0456
+    },
+    "salesforce": {
+      "n": 590,
+      "recall": 0.6712
+    },
+    "whatsapp": {
+      "n": 925,
+      "recall": 0.773
+    }
+  },
+  "permutation_importance_top20": [
+    {
+      "feature": "len_host",
+      "mean": 0.02158,
+      "std": 0.00076
+    },
+    {
+      "feature": "entropy_path",
+      "mean": 0.01553,
+      "std": 0.00057
+    },
+    {
+      "feature": "is_shared_platform",
+      "mean": 0.01403,
+      "std": 0.00105
+    },
+    {
+      "feature": "n_generic_keywords",
+      "mean": 0.01223,
+      "std": 0.00017
+    },
+    {
+      "feature": "is_https",
+      "mean": 0.01103,
+      "std": 0.00088
+    },
+    {
+      "feature": "path_depth",
+      "mean": 0.00723,
+      "std": 0.00057
+    },
+    {
+      "feature": "vowel_ratio_domain",
+      "mean": 0.00626,
+      "std": 9e-05
+    },
+    {
+      "feature": "entropy_host",
+      "mean": 0.00597,
+      "std": 0.00019
+    },
+    {
+      "feature": "longest_token",
+      "mean": 0.00587,
+      "std": 0.00082
+    },
+    {
+      "feature": "n_digits_path",
+      "mean": 0.0055,
+      "std": 0.0005
+    },
+    {
+      "feature": "digit_ratio",
+      "mean": 0.00489,
+      "std": 0.00097
+    },
+    {
+      "feature": "tld_com",
+      "mean": 0.00441,
+      "std": 0.00044
+    },
+    {
+      "feature": "tld_org",
+      "mean": 0.00403,
+      "std": 0.00011
+    },
+    {
+      "feature": "tld_gov",
+      "mean": 0.00397,
+      "std": 0.00049
+    },
+    {
+      "feature": "tld_edu",
+      "mean": 0.00337,
+      "std": 0.00033
+    },
+    {
+      "feature": "n_hyphens_host",
+      "mean": 0.00324,
+      "std": 0.00039
+    },
+    {
+      "feature": "n_brand_keywords",
+      "mean": 0.00292,
+      "std": 9e-05
+    },
+    {
+      "feature": "tld_length",
+      "mean": 0.00262,
+      "std": 8e-05
+    },
+    {
+      "feature": "n_dots_host",
+      "mean": 0.00256,
+      "std": 9e-05
+    },
+    {
+      "feature": "tld_other",
+      "mean": 0.00245,
+      "std": 0.00036
+    }
+  ],
+  "learning_curve": [
+    {
+      "share_of_sites": 0.05,
+      "train_rows": 28357,
+      "val_roc_auc": 0.8572597213486378,
+      "val_recall_at_fpr_0.01": 0.5052243392747388
+    },
+    {
+      "share_of_sites": 0.1,
+      "train_rows": 56367,
+      "val_roc_auc": 0.8780834061956264,
+      "val_recall_at_fpr_0.01": 0.5498873181725056
+    },
+    {
+      "share_of_sites": 0.25,
+      "train_rows": 147291,
+      "val_roc_auc": 0.8677482956787279,
+      "val_recall_at_fpr_0.01": 0.5864918391040087
+    },
+    {
+      "share_of_sites": 0.5,
+      "train_rows": 298335,
+      "val_roc_auc": 0.8779684514098718,
+      "val_recall_at_fpr_0.01": 0.6100867308611624
+    },
+    {
+      "share_of_sites": 1.0,
+      "train_rows": 599101,
+      "val_roc_auc": 0.876653755066261,
+      "val_recall_at_fpr_0.01": 0.6265792528853377
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "validation_reference": {
+    "fpr": 0.009982440270313414,
+    "recall": 0.6163700338195607
+  },
+  "trigger_rule": "FPR > 2x val FPR or recall < val recall - 0.10",
+  "months": [
+    {
+      "month": "2025-09",
+      "n": 31351,
+      "share_high": 0.05817996236164716,
+      "share_suspicious": 0.052055755797263244,
+      "mean_score": 0.07683404988777881,
+      "fpr_high": 0.01126573889993373,
+      "recall_high": 0.36237765576509906,
+      "retrain_trigger": true
+    },
+    {
+      "month": "2025-10",
+      "n": 110731,
+      "share_high": 0.32475097307890294,
+      "share_suspicious": 0.1067000207710578,
+      "mean_score": 0.3425718768737914,
+      "fpr_high": 0.011845853951117109,
+      "recall_high": 0.695109445868665,
+      "retrain_trigger": false
+    },
+    {
+      "month": "2025-11",
+      "n": 19484,
+      "share_high": 0.6988298090741121,
+      "share_suspicious": 0.1158899609936358,
+      "mean_score": 0.700860055396016,
+      "fpr_high": 0.00861656294877932,
+      "recall_high": 0.7817188847369934,
+      "retrain_trigger": false
+    },
+    {
+      "month": "2025-12",
+      "n": 965,
+      "share_high": 0.022797927461139896,
+      "share_suspicious": 0.043523316062176166,
+      "mean_score": 0.043336722604468005,
+      "fpr_high": 0.022797927461139896,
+      "recall_high": null,
+      "retrain_trigger": true
+    }
+  ]
+}

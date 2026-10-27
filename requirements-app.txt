@@ -1,0 +1,9 @@
+# Runtime dependencies for the web app only (used on Hugging Face Spaces).
+# Gradio itself is installed by the Space from sdk_version in the Space README.
+# scikit-learn MUST match the version used to train models/model.joblib.
+scikit-learn==1.9.1
+numpy==2.5.4
+pandas==3.0.6
+tldextract==5.4.0
+idna==3.20
+joblib==1.6.0

@@ -1,0 +1,81 @@
+{
+  "raw_rows": 666315,
+  "shortener_rows_by_split_label": {
+    "test/benign": 1,
+    "test/phish": 205,
+    "train/benign": 1,
+    "train/phish": 6614
+  },
+  "train_conflicting_keys": 1,
+  "train_rows_dropped_conflict": 2,
+  "train_rows_dropped_duplicate": 4192,
+  "test_conflicting_keys": 1,
+  "test_rows_dropped_conflict": 2,
+  "test_rows_dropped_duplicate": 4327,
+  "test_rows_dropped_seen_in_train": 31,
+  "rows_by_set_label": {
+    "core": {
+      "benign": 181721,
+      "phish": 181550
+    },
+    "test": {
+      "benign": 91199,
+      "phish": 72295
+    },
+    "val": {
+      "benign": 94901,
+      "phish": 29274
+    }
+  },
+  "phish_share_by_set": {
+    "core": 0.4998,
+    "test": 0.4422,
+    "val": 0.2357
+  },
+  "date_range_by_set": {
+    "core": [
+      "2024-07-02",
+      "2025-06-30"
+    ],
+    "test": [
+      "2025-09-08",
+      "2025-12-16"
+    ],
+    "val": [
+      "2025-07-01",
+      "2025-09-08"
+    ]
+  },
+  "tld_vocab": [
+    "com",
+    "io",
+    "org",
+    "dev",
+    "shop",
+    "app",
+    "net",
+    "gov",
+    "top",
+    "co.uk",
+    "edu",
+    "co.jp",
+    "com.au",
+    "jp",
+    "site",
+    "me",
+    "it",
+    "link",
+    "buzz",
+    "ca",
+    "cfd",
+    "eu",
+    "click",
+    "fr",
+    "info",
+    "xyz",
+    "sh",
+    "co",
+    "nl",
+    "cc"
+  ]
+}

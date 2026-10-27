@@ -1,0 +1,185 @@
+{
+  "rows": {
+    "train_core_original": 363391,
+    "train_augmented_rows": 235710,
+    "val": 124183,
+    "robust_real_benign_root": 5686,
+    "robust_real_benign_depth1": 18140
+  },
+  "models": {
+    "baseline_dummy": {
+      "n": 124183,
+      "phish_share": 0.2358293808331253,
+      "roc_auc": 0.5,
+      "average_precision": 0.2358293808331253,
+      "recall_at_fpr_0.01": 0.0,
+      "threshold_at_fpr_0.01": Infinity,
+      "at_t_high": {
+        "threshold": Infinity,
+        "tp": 0,
+        "fp": 0,
+        "tn": 94897,
+        "fn": 29286,
+        "precision": NaN,
+        "recall": 0.0,
+        "f1": NaN,
+        "fpr": 0.0
+      },
+      "fpr_real_benign_root": 0.0,
+      "fpr_real_benign_depth1": 0.0,
+      "recall_root_phish": 0.0,
+      "recall_nonroot_phish": 0.0
+    },
+    "baseline_rules": {
+      "n": 124183,
+      "phish_share": 0.2358293808331253,
+      "roc_auc": 0.604228369581748,
+      "average_precision": 0.36085567969662935,
+      "recall_at_fpr_0.01": 0.0,
+      "threshold_at_fpr_0.01": Infinity,
+      "at_t_high": {
+        "threshold": Infinity,
+        "tp": 0,
+        "fp": 0,
+        "tn": 94897,
+        "fn": 29286,
+        "precision": NaN,
+        "recall": 0.0,
+        "f1": NaN,
+        "fpr": 0.0
+      },
+      "fpr_real_benign_root": 0.0,
+      "fpr_real_benign_depth1": 0.0,
+      "recall_root_phish": 0.0,
+      "recall_nonroot_phish": 0.0,
+      "rules_at_flag": {
+        "threshold": 0.5,
+        "tp": 6669,
+        "fp": 1828,
+        "tn": 93069,
+        "fn": 22617,
+        "precision": 0.7848652465576086,
+        "recall": 0.22771972956361403,
+        "f1": 0.35301590662467247,
+        "fpr": 0.019262990400118023
+      }
+    },
+    "logistic_regression": {
+      "n": 124183,
+      "phish_share": 0.2358293808331253,
+      "roc_auc": 0.8446896643251385,
+      "average_precision": 0.7863609555391663,
+      "recall_at_fpr_0.01": 0.4278494843952742,
+      "threshold_at_fpr_0.01": 0.8369638323783875,
+      "at_t_high": {
+        "threshold": 0.8369638323783875,
+        "tp": 12530,
+        "fp": 948,
+        "tn": 93949,
+        "fn": 16756,
+        "precision": 0.9296631547707375,
+        "recall": 0.4278494843952742,
+        "f1": 0.5860069217098495,
+        "fpr": 0.009989778391308471
+      },
+      "fpr_real_benign_root": 0.021632078790010553,
+      "fpr_real_benign_depth1": 0.008434399117971335,
+      "recall_root_phish": 0.573454664699131,
+      "recall_nonroot_phish": 0.3239115168539326,
+      "size_mb": 0.002904,
+      "latency_ms": 0.5328782549997868
+    },
+    "decision_tree": {
+      "n": 124183,
+      "phish_share": 0.2358293808331253,
+      "roc_auc": 0.8644385051756165,
+      "average_precision": 0.772504102688746,
+      "recall_at_fpr_0.01": 0.4811514034009424,
+      "threshold_at_fpr_0.01": 0.6643835616438356,
+      "at_t_high": {
+        "threshold": 0.6643835616438356,
+        "tp": 14091,
+        "fp": 923,
+        "tn": 93974,
+        "fn": 15195,
+        "precision": 0.9385240442253896,
+        "recall": 0.4811514034009424,
+        "f1": 0.6361625282167043,
+        "fpr": 0.009726334868330928
+      },
+      "fpr_real_benign_root": 0.036229335209285965,
+      "fpr_real_benign_depth1": 0.014167585446527011,
+      "recall_root_phish": 0.6722413510411542,
+      "recall_nonroot_phish": 0.3447448501872659,
+      "size_mb": 0.030174,
+      "latency_ms": 0.19614408499933234
+    },
+    "random_forest": {
+      "n": 124183,
+      "phish_share": 0.2358293808331253,
+      "roc_auc": 0.9019260699774607,
+      "average_precision": 0.8458066917625106,
+      "recall_at_fpr_0.01": 0.5964966195451752,
+      "threshold_at_fpr_0.01": 0.39730226088114245,
+      "at_t_high": {
+        "threshold": 0.39730226088114245,
+        "tp": 17469,
+        "fp": 948,
+        "tn": 93949,
+        "fn": 11817,
+        "precision": 0.9485258185372211,
+        "recall": 0.5964966195451752,
+        "f1": 0.7324067668700082,
+        "fpr": 0.009989778391308471
+      },
+      "fpr_real_benign_root": 0.05276116778051354,
+      "fpr_real_benign_depth1": 0.014112458654906285,
+      "recall_root_phish": 0.7338088211182161,
+      "recall_nonroot_phish": 0.49847846441947563,
+      "size_mb": 8.407787,
+      "latency_ms": 24.36306693000006
+    },
+    "hist_gradient_boosting": {
+      "n": 124183,
+      "phish_share": 0.2358293808331253,
+      "roc_auc": 0.876653755066261,
+      "average_precision": 0.8396490437334313,
+      "recall_at_fpr_0.01": 0.6265792528853377,
+      "threshold_at_fpr_0.01": 0.5328438719517893,
+      "at_t_high": {
+        "threshold": 0.5328438719517893,
+        "tp": 18350,
+        "fp": 948,
+        "tn": 93949,
+        "fn": 10936,
+        "precision": 0.9508757384184889,
+        "recall": 0.6265792528853377,
+        "f1": 0.7553927218837477,
+        "fpr": 0.009989778391308471
+      },
+      "fpr_real_benign_root": 0.050650721069293,
+      "fpr_real_benign_depth1": 0.017089305402425578,
+      "recall_root_phish": 0.7434005574684375,
+      "recall_nonroot_phish": 0.543188202247191,
+      "size_mb": 0.951241,
+      "latency_ms": 5.392407809999895
+    }
+  },
+  "selection": {
+    "eligible": [
+      "decision_tree",
+      "hist_gradient_boosting",
+      "logistic_regression",
+      "random_forest"
+    ],
+    "within_0.01_of_best": [
+      "hist_gradient_boosting"
+    ],
+    "chosen": "hist_gradient_boosting"
+  },
+  "thresholds": {
+    "high": 0.5328438719517893,
+    "low": 0.11890754289047968
+  },
+  "runtime_seconds": 966
+}
